@@ -61,8 +61,16 @@ def validar_fin_juego(tablero):
                 cont=0
                 break
         if cont == 3:
+            if variable=='O':
+                print('Perdiste')
+            if variable=='X':
+                print('Ganaste')
             return False
     if cont == 3 :
+        if variable=='O':
+            print('Perdiste')
+        if variable=='X':
+            print('Ganaste')
         return False
     cont = 0
 
@@ -89,6 +97,10 @@ def validar_fin_juego(tablero):
             cont=0
             break
     if cont == 3 :
+        if variable=='O':
+            print('Perdiste')
+        if variable=='X':
+            print('Ganaste')
         return False
     else: 
         return True
@@ -102,8 +114,16 @@ def validar_fin_juego(tablero):
                 cont=0
                 break
         if cont == 3:
+            if variable=='O':
+                print('Perdiste')
+            if variable=='X':
+                print('Ganaste')
             return False
     if cont == 3 :
+        if variable=='O':
+            print('Perdiste')
+        if variable=='X':
+            print('Ganaste')
         return False
     else: 
         return True
