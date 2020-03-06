@@ -93,7 +93,7 @@ if __name__ == '__main__':
             'Barcelona': 346,},
         'Madrid': {'Salamanca': 203, 'Sevilla': 514, 'Malaga': 513, 
             'Granada': 423, 'Barcelona': 603, 'Santander': 437, 'Valencia': 356,
-            'Zaragoza': 313, 'Santander': 437, 'Santiago': 599},
+            'Zaragoza': 313, 'Santiago': 599},
         'Salamanca': {'Santiago': 390, 'Madrid': 203},
         'Santiago': {'Salamanca': 390, 'Madrid': 599},
         'Santander': {'Madrid': 437, 'Zaragoza': 394},

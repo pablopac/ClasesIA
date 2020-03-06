@@ -8,7 +8,7 @@ class NodoReload(Nodo):
         super(NodoReload, self).__init__(*args)
         self.set_hijos()
 
-        super(NodoReload, self).set_hijos()
+        #super(NodoReload, self).set_hijos()
 
     def set_hijos(self):
         pass
@@ -24,6 +24,7 @@ def buscar_solucion_UCS(conexiones, estado_inicial, solucion):
     nodoInicial = Nodo(estado_inicial)
     nodoInicial.set_coste(0)
     nodos_frontera.append(nodoInicial)
+    #print(nodos_frontera)
     while (not solucionado) and len(nodos_frontera) != 0:
         # Ordenar la lista de nodos frontera
         nodos_frontera = sorted(nodos_frontera, key=cmp_to_key(compara))
@@ -56,6 +57,7 @@ def buscar_solucion_UCS(conexiones, estado_inicial, solucion):
                         nodos_frontera.append(hijo)
 
             nodo.set_hijos(lista_hijos)
+            #print(lista_hijos)
 
 def main():
     conexiones = {
@@ -66,7 +68,7 @@ def main():
             'Barcelona': 346,},
         'Madrid': {'Salamanca': 203, 'Sevilla': 514, 'Malaga': 513, 
             'Granada': 423, 'Barcelona': 603, 'Santander': 437, 'Valencia': 356,
-            'Zaragoza': 313, 'Santander': 437, 'Santiago': 599},
+            'Zaragoza': 313,  'Santiago': 599},
         'Salamanca': {'Santiago': 390, 'Madrid': 203},
         'Santiago': {'Salamanca': 390, 'Madrid': 599},
         'Santander': {'Madrid': 437, 'Zaragoza': 394},
